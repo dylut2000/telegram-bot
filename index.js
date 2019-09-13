@@ -8,6 +8,12 @@ app.use(bodyParser.json());
 // for parsing application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use('/', (req, res, next) => {
+    res.status(200).json({
+        author: 'hardy dylut'
+    })
+});
+
 //This is the route the API will call
 app.post('/new-message', function(req, res) {
     const { message } = req.body
