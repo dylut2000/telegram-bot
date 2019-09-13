@@ -1,0 +1,23 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+.DS_Store
+.swp
+.approvals
+.torus.json
+coverage
+/tags
+
+#Ignore node_modules.
+node_modules/
+
+#Ignore ide
+*.idea/
+.vscode/
+.agignore
+
+#by hardy-lutula-DYLUT
